@@ -1,0 +1,55 @@
+﻿@model HotelBooking
+
+
+
+<h1>New Hotel</h1>
+
+<hr />
+
+<div class="row">
+
+    <div class="body">
+
+        <div class="card-header">
+            <h3>Create a new dog</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-controller="HellowWorld" asp-action="CreateHotel" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Hotel ID</label>
+                    <input asp-for="Id" type="number" class="form-control" id="Id" placeholder="Hotel ID">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Dog Age</label>
+                    <input asp-for="guestName" type="text" class="form-control" id="guestName" placeholder="Guests Name">
+                </div>
+                
+                 <div class="mb-3">
+                    <label class="form-label">Start Date</label>
+                    <input asp-for="DateStart" type="date" class="form-control" id="date" placeholder="Start Date">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">End Date</label>
+                    <input asp-for="DateEnd" type="date" class="form-control" id="date" placeholder="Date End">
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary">SAVE</button>"
+                </div>
+            </form>
+
+        </div>
+
+        <div class="card-footer">
+        </div>
+
+
+    </div>
+
+    <div class="col-6">
+    </div>
+</div>
